@@ -18,5 +18,8 @@
     "eslint-plugin-vue": "^9.11.1",
     "nuxt": "^3.4.3",
     "nuxt-icon": "^0.4.0"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^1.0.0-beta.6"
   }
 }

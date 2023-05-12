@@ -47,7 +47,7 @@ const mobileHamburger = ref(false);
       >
         <Icon name="uil:snapchat-square" size="1.5em" class="" />
         <Icon name="uil:instagram" size="1.5em" class="" />
-        <div class="pr-4 flex flex-row items-center">
+        <div class="pr-2 sm:pr-4 flex flex-row items-center">
           <Icon name="uil:phone" size="1.5em" class="" />
           <span class="hidden md:block text-red-500 pl-1"
             ><span class="text-black">+33 6</span> 00 00 00 00</span

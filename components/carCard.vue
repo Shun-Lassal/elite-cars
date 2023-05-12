@@ -1,5 +1,6 @@
 <script setup>
 defineProps({
+  available: Boolean,
   carName: String,
   carBrand: String,
   carImage: String,
@@ -27,10 +28,20 @@ defineProps({
         />
       </div>
     </div>
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-evenly items-center h-full w-full">
       <span class="text-xl font-light py-2">{{ carName }}</span>
-      <img src="../assets/pic1.JPG" alt="" class="h-3/4 w-3/4 rounded-lg" />
-      <div class="bg-red-600 rounded p-2 text-white my-4">
+      <img
+        :src="`_nuxt/assets/` + carImage"
+        alt=""
+        class="h-3/4 w-3/4 rounded-lg object-cover"
+      />
+      <span class="mt-2 text-green-700 font-bold" v-if="available"
+        >Disponible aujourd'hui</span
+      >
+      <span class="mt-2 text-red-700 font-bold" v-if="!available"
+        >Indisponible</span
+      >
+      <div class="bg-red-600 rounded p-2 text-white mb-4 mt-2">
         <span class="pr-2 font-light">{{ pricePerDay }}€ / Jour</span>
         <span class="pl-2 border-l border-l-gray-800 font-bold">Réserver</span>
       </div>

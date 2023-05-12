@@ -17,4 +17,5 @@ export default defineNuxtConfig({
     exposeConfig: false,
     injectPosition: 0,
   },
+  plugins: [],
 });
