@@ -31,7 +31,7 @@ defineProps({
     <div class="flex flex-col justify-evenly items-center h-full w-full">
       <span class="text-xl font-light py-2">{{ carName }}</span>
       <img
-        :srcset="`../assets/` + carImage"
+        :srcset="`./assets/` + carImage"
         alt=""
         class="h-3/4 w-3/4 rounded-lg object-cover"
       />
