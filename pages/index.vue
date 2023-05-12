@@ -31,7 +31,7 @@ carouselMove();
       <!-- "CAROUSEL "-->
       <div class="bg-slate-100 object-contain" v-if="carouselPage == 1">
         <img
-          src="../assets/pic1.JPG"
+          src="../assets/pic1.jpg"
           class="object-cover w-full h-80 lg:h-160 md:h-128"
         />
         <cardInfoLanding
@@ -43,7 +43,7 @@ carouselMove();
 
       <div class="bg-slate-100 object-contain" v-if="carouselPage == 2">
         <img
-          src="../assets/pic2.JPG"
+          src="../assets/pic2.jpg"
           class="object-cover w-full h-80 lg:h-160 md:h-128"
         />
         <cardInfoLanding
@@ -55,7 +55,7 @@ carouselMove();
 
       <div class="bg-slate-100 object-contain" v-if="carouselPage == 3">
         <img
-          src="../assets/pic3.JPG"
+          src="../assets/pic3.jpg"
           class="object-cover w-full h-80 lg:h-160 md:h-128"
         />
         <cardInfoLanding
