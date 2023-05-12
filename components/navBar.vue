@@ -1,4 +1,5 @@
 <script setup>
+// eslint-disable-next-line no-undef
 const mobileHamburger = ref(false);
 </script>
 

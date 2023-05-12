@@ -3,6 +3,7 @@ import { resolve } from "path";
 export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
+    "images": resolve(__dirname, "./assets/"),
   },
   css: ["~/assets/main.css"],
   modules: [
@@ -18,4 +19,5 @@ export default defineNuxtConfig({
     injectPosition: 0,
   },
   plugins: [],
+
 });

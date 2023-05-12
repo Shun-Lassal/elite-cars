@@ -1,4 +1,5 @@
 <script setup>
+// eslint-disable-next-line no-undef
 const carouselPage = ref(0);
 
 function carouselMove() {
@@ -20,6 +21,7 @@ function carouselMove() {
 }
 
 carouselMove();
+
 </script>
 
 <template>
