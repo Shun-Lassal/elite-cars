@@ -2,22 +2,44 @@
 // eslint-disable-next-line no-undef
 const carouselPage = ref(0);
 
-function carouselMove() {
-  // do whatever you like here
-  switch (carouselPage.value) {
-    case 1:
-      carouselPage.value = 2;
-      break;
-    case 2:
-      carouselPage.value = 3;
-      break;
-    case 3:
-      carouselPage.value = 1;
-      break;
-    default:
-      carouselPage.value = 1;
+function carouselMove(value = null) {
+
+  if(value != null)
+  {
+    switch(value){
+      case 1:
+        carouselPage.value = 1
+        break;
+      case 2:
+        carouselPage.value = 2
+        break;
+      case 3:
+        carouselPage.value = 3
+        break;
+      default:
+        carouselPage.value = 1
+        break;
+    }
   }
-  setTimeout(carouselMove, 5000);
+  else
+  {
+    switch (carouselPage.value) {
+      case 1:
+        carouselPage.value = 2;
+        break;
+      case 2:
+        carouselPage.value = 3;
+        break;
+      case 3:
+        carouselPage.value = 1;
+        break;
+      default:
+        carouselPage.value = 1;
+        break;
+    }
+    setTimeout(carouselMove, 5000);
+  }
+  
 }
 
 carouselMove();
@@ -80,7 +102,7 @@ carouselMove();
           name="ic:baseline-circle"
           size="1em"
           class="text-slate-500"
-          @click="carouselPage = 1"
+          @click="carouselMove(1)"
           v-if="carouselPage != 1"
         />
 
@@ -95,7 +117,7 @@ carouselMove();
           name="ic:baseline-circle"
           size="1em"
           class="text-slate-500"
-          @click="carouselPage = 2"
+          @click="carouselMove(2)"
           v-if="carouselPage != 2"
         />
 
@@ -110,7 +132,7 @@ carouselMove();
           name="ic:baseline-circle"
           size="1em"
           class="text-slate-500"
-          @click="carouselPage = 3"
+          @click="carouselMove(3)"
           v-if="carouselPage != 3"
         />
       </div>
