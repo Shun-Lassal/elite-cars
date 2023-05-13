@@ -10,7 +10,7 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-row justify-start items-start bg-gray-100 border border-gray-200 border-t border-t-red-500 rounded shadow-xl shadow-gray-400 relative"
+    class="flex flex-row justify-start items-start bg-gray-100 border border-gray-200 border-t border-t-red-500 rounded shadow-md shadow-gray-400 relative"
   >
     <div
       class="absolute -top-2 left-4 sm:left-14 md:left-24 lg:left-8 right-0 bottom-0"

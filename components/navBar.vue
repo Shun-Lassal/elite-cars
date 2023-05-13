@@ -29,19 +29,25 @@ const mobileHamburger = ref(false);
           <div
             class="pl-0 md:ml-4 flex items-center font-light hover:border-b border-b-black"
           >
-            <Icon name="tabler:car" size="1.5em" />
-            <span class="pl-4 text-lg">Voitures</span>
+            <NuxtLink to="/voitures">
+              <Icon name="tabler:car" size="1.5em" />
+              <span class="pl-4 text-lg">Voitures</span>
+            </NuxtLink>
           </div>
           <div
             class="flex items-center font-light hover:border-b border-b-black"
           >
-            <Icon name="tabler:speedboat" size="1.5em" />
-            <span class="pl-4 text-lg">Bateaux</span>
+            <NuxtLink to="/bateaux">
+              <Icon name="tabler:speedboat" size="1.5em" />
+              <span class="pl-4 text-lg">Bateaux</span>
+            </NuxtLink>
           </div>
         </div>
       </div>
       <div class="flex-1 flex flex-row justify-center items-start w-2/4">
-        <img src="../assets/logo-no-background.svg" class="w-30 h-10" />
+        <NuxtLink to="/">
+          <img src="../assets/logo-no-background.svg" class="w-30 h-10" />
+        </NuxtLink>
       </div>
       <div
         class="flex flex-1 flex-row justify-end items-center md:justify-center space-x-2 w-1/3"
@@ -61,16 +67,22 @@ const mobileHamburger = ref(false);
       v-if="mobileHamburger"
     >
       <div class="py-2 pl-4 border-b w-full flex flex-row items-center">
-        <Icon name="tabler:car" size="1.5em" />
-        <span class="pl-4 text-lg">Voitures</span>
+        <NuxtLink to="/voitures">
+          <Icon name="tabler:car" size="1.5em" />
+          <span class="pl-4 text-lg">Voitures</span>
+        </NuxtLink>
       </div>
       <div class="py-2 pl-4 border-b w-full flex flex-row items-center">
-        <Icon name="tabler:speedboat" size="1.5em" />
-        <span class="pl-4 text-lg">Bateaux</span>
+        <NuxtLink to="/bateaux">
+          <Icon name="tabler:speedboat" size="1.5em" />
+          <span class="pl-4 text-lg">Bateaux</span>
+        </NuxtLink>
       </div>
       <div class="py-2 pl-4 border-b w-full flex flex-row items-center">
-        <Icon name="uil:phone" size="1.5em" />
-        <span class="pl-4 text-lg">Contact</span>
+        <NuxtLink to="/contact">
+          <Icon name="uil:phone" size="1.5em" />
+          <span class="pl-4 text-lg">Contact</span>
+        </NuxtLink>
       </div>
     </div>
   </nav>
