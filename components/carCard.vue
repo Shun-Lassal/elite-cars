@@ -1,5 +1,6 @@
 <script setup>
 defineProps({
+  carId: Number,
   available: Boolean,
   carName: String,
   carBrand: String,
@@ -13,7 +14,7 @@ defineProps({
     class="flex flex-row justify-start items-start bg-gray-100 border border-gray-200 border-t border-t-red-500 rounded shadow-md shadow-gray-400 relative"
   >
     <div
-      class="absolute -top-2 left-4 sm:left-14 md:left-24 lg:left-8 right-0 bottom-0"
+      class="absolute -top-2 left-4 sm:left-14 md:left-24 lg:left-8 right-0 bottom-0 pointer-events-none"
     >
       <div class="relative">
         <Icon
@@ -41,10 +42,12 @@ defineProps({
       <span class="mt-2 text-red-700 font-bold" v-if="!available"
         >Indisponible</span
       >
-      <div class="bg-red-600 rounded p-2 text-white mb-4 mt-2">
-        <span class="pr-2 font-light">{{ pricePerDay }}€ / Jour</span>
-        <span class="pl-2 border-l border-l-gray-800 font-bold">Réserver</span>
-      </div>
+      <NuxtLink :to="`/vehicule/`+carId">
+        <div class="bg-red-600 hover:bg-red-700 rounded p-2 text-white mb-4 mt-2">
+          <span class="pr-2 font-light">{{ pricePerDay }}€ / Jour</span>
+          <span class="pl-2 border-l border-l-gray-800 font-bold">Réserver</span>
+        </div>
+      </NuxtLink>
     </div>
   </div>
 </template>

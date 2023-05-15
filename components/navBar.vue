@@ -66,20 +66,20 @@ const mobileHamburger = ref(false);
       class="flex flex-col items-start border-b border-solid border-b-red-500 shadow-lg top-0 z-20 relative md:hidden"
       v-if="mobileHamburger"
     >
-      <div class="py-2 pl-4 border-b w-full flex flex-row items-center">
-        <NuxtLink to="/voitures">
+      <div class="py-2 px-4 border-b w-full flex flex-row items-center">
+        <NuxtLink to="/voitures" class="w-full">
           <Icon name="tabler:car" size="1.5em" />
           <span class="pl-4 text-lg">Voitures</span>
         </NuxtLink>
       </div>
-      <div class="py-2 pl-4 border-b w-full flex flex-row items-center">
-        <NuxtLink to="/bateaux">
+      <div class="py-2 px-4 border-b w-full flex flex-row items-center">
+        <NuxtLink to="/bateaux" class="w-full">
           <Icon name="tabler:speedboat" size="1.5em" />
           <span class="pl-4 text-lg">Bateaux</span>
         </NuxtLink>
       </div>
-      <div class="py-2 pl-4 border-b w-full flex flex-row items-center">
-        <NuxtLink to="/contact">
+      <div class="py-2 px-4 border-b w-full flex flex-row items-center">
+        <NuxtLink to="/contact" class="w-full">
           <Icon name="uil:phone" size="1.5em" />
           <span class="pl-4 text-lg">Contact</span>
         </NuxtLink>

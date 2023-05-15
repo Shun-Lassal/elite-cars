@@ -140,68 +140,74 @@ carouselMove();
       </div>
     </div>
     <div class="border-t border-t-red-500 h-full bg-slate-100">
-      <div
-        class="h-full flex flex-col justify-center items-center shadow-inner border-b border-b-red-500 pb-14"
-      >
-        <h2 class="text-3xl font-medium border-b border-b-red-500 mt-14 mb-8">
-          Services de location
-        </h2>
-
-        <p
-          class="px-4 md:px-16 mb-8 text-center text-xl font-semibold drop-shadow-md"
+      <div class="container mx-auto">
+        <div
+          class="h-full flex flex-col justify-center items-center border-b border-b-red-500 pb-14"
         >
-          Explorez Marseille et ses environs à bord de nos voitures de location
-          de qualité supérieure.
-        </p>
-        <div class="h-full px-4 md:px-16 text-ellipsis space-y-6 font-light">
-          <p class="">
-            Chez <span class="text-red-500 font-bold">ELITE-CARS</span>, nous
-            sommes fiers de proposer une expérience de location de voitures haut
-            de gamme à Marseille et dans ses environs, nous disposons d'une
-            large sélection de voitures de qualité supérieure pour répondre à
-            tous vos besoins de déplacement.
+          <h2 class="text-3xl font-medium border-b border-b-red-500 mt-14 mb-8">
+            Services de location
+          </h2>
+  
+          <p
+            class="px-4 md:px-16 mb-8 text-center text-xl font-semibold drop-shadow-md"
+          >
+            Explorez Marseille et ses environs à bord de nos voitures de location
+            de qualité supérieure.
           </p>
-          <p class="">
-            Que vous soyez en visite à Marseille pour affaires ou pour le
-            plaisir, notre équipe expérimentée est là pour vous aider à trouver
-            la voiture de location parfaite pour votre voyage.
-          </p>
-          <p class="pb-6">
-            Contactez-nous dès maintenant pour réserver votre voiture de
-            location et découvrir la beauté de la Côte d'Azur à votre rythme.
-          </p>
+          <div class="h-full px-4 md:px-16 text-ellipsis space-y-6 font-light">
+            <p class="">
+              Chez <span class="text-red-500 font-bold">ELITE-CARS</span>, nous
+              sommes fiers de proposer une expérience de location de voitures haut
+              de gamme à Marseille et dans ses environs, nous disposons d'une
+              large sélection de voitures de qualité supérieure pour répondre à
+              tous vos besoins de déplacement.
+            </p>
+            <p class="">
+              Que vous soyez en visite à Marseille pour affaires ou pour le
+              plaisir, notre équipe expérimentée est là pour vous aider à trouver
+              la voiture de location parfaite pour votre voyage.
+            </p>
+            <p class="pb-6">
+              Contactez-nous dès maintenant pour réserver votre voiture de
+              location et découvrir la beauté de la Côte d'Azur à votre rythme.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="border-t">
-        <div class="h-40 flex flex-col justify-center items-center">
+      <div class="border-t bg-slate-200">
+        <div class="h-40 flex flex-col justify-center items-center container mx-auto">
           <h2 class="text-2xl font-medium border-b border-b-red-500">
             Véhicules disponibles
           </h2>
         </div>
         <div
-          class="grid lg:grid-cols-3 <lg:grid-cols-2 gap-8 px-12 md:px-24 pb-16"
+          class="grid lg:grid-cols-3 <lg:grid-cols-2 gap-8 px-12 md:px-24 pb-16 container mx-auto"
         >
           <carCard
+            :car-id="1"
             :available="true"
-            car-name="206 Coupé"
-            car-brand="peugeot"
+            car-name="Clio 5 RS Line"
+            car-brand="renault"
             car-image="pic1.jpg"
             :price-per-day="170"
           />
           <carCard
-            car-name="Audi A3"
-            car-brand="audi"
+            :car-id="2"
+            car-name="Golf Polo GTI"
+            car-brand="volkswagen"
             car-image="pic2.jpg"
             :price-per-day="170"
           />
           <carCard
-            car-name="Clio RS4"
-            car-brand="renault"
+            :car-id="3"
+            car-name="Abarth 595 Pinta"
+            car-brand="fiat"
             car-image="pic3.jpg"
             :price-per-day="170"
           />
           <carCard
-            car-name="Class A200"
+            :car-id="4"
+            car-name="Class A200 AMG"
             car-brand="mercedes"
             car-image="pic4.jpg"
             :price-per-day="170"

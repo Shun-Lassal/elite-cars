@@ -3,7 +3,7 @@
       class="border-t border-t-red-500 bg-slate-100 flex flex-col md:flex-row justify-center items-center"
     >
       <div class="flex flex-col justify-center items-center my-8">
-        <NuxtLink to="/" class="w-1/4">
+        <NuxtLink to="/" class="w-2/4">
 
           <img src="../assets/logo-no-background.svg" />
         </NuxtLink>
@@ -27,7 +27,7 @@
         <NuxtLink to="mentions_legales">
           <span class="text-slate-400 hover:text-slate-500">Conditions générales de location</span>
         </NuxtLink>
-        <NuxtLink to="contact">
+        <NuxtLink to="/contact">
           <span class="text-slate-400 hover:text-slate-500">Contact</span>
         </NuxtLink>
       </div>
