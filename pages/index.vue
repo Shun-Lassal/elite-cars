@@ -200,7 +200,7 @@ carouselMove();
           />
           <carCard
             :car-id="3"
-            car-name="Abarth 595 Pinta"
+            car-name="Abarth 595 Pista"
             car-brand="fiat"
             car-image="pic3.jpg"
             :price-per-day="170"

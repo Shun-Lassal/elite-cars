@@ -16,16 +16,16 @@ defineProps({
     <div
       class="absolute -top-2 left-4 sm:left-14 md:left-24 lg:left-8 right-0 bottom-0 pointer-events-none"
     >
-      <div class="relative">
+      <div class="relative flex flex-row justify-center items-center">
         <Icon
           name="ic:sharp-bookmark"
           size="4em"
-          class="absolute top-0 left-0 right-0 bottom-0 text-red-500"
+          class=" absolute top-0 -left-7 lg:-left-2 right-0 bottom-0 text-red-500"
         />
         <Icon
           :name="`simple-icons:` + carBrand"
           size="2.2em"
-          class="absolute top-2.5 right-0 left-3.5 bottom-0 text-white"
+          class=" absolute  top-2.5 right-0 -left-3.5 lg:left-1.5 bottom-0 text-white"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
+<!-- eslint-disable no-undef -->
 <script setup>
-// eslint-disable-next-line no-undef
 const route = useRoute()
-const vehiculeId = parseInt(route.params.id)
+let vehiculeId = parseInt(route.params.id)
 
 const arrayVoitures = [
   {
@@ -21,7 +21,7 @@ const arrayVoitures = [
     }
   },
   {
-    "id": 2,
+    "id": 4,
     "nom": "Class A A200 AMG",
     "constructeur": "Mercedes-Benz",
     "prix_location_journee": 80,
@@ -37,7 +37,7 @@ const arrayVoitures = [
     }
   },
   {
-    "id": 3,
+    "id": 2,
     "nom": "Golf Polo GTI",
     "constructeur": "Volkswagen",
     "prix_location_journee": 60,
@@ -53,7 +53,7 @@ const arrayVoitures = [
     }
   },
   {
-  "id": 4,
+  "id": 3,
   "nom": "Abarth 595 Pista",
   "constructeur": "Abarth",
   "prix_location_journee": 70,
@@ -83,8 +83,9 @@ else
       console.log("Vérification terminée !");
       console.log(`ID du véhicule ${vehiculeId} présent : ${isVehicleIdPresent}`);
     });
-
 }
+
+const vehicule = ref(arrayVoitures.find(item => item.id === vehiculeId))
 
 function checkVehicleId(vehicleId, vehicleArray) {
   return new Promise((resolve) => {
@@ -94,7 +95,6 @@ function checkVehicleId(vehicleId, vehicleArray) {
   });
 }
 
-
 </script>
 
 <template>
@@ -102,7 +102,7 @@ function checkVehicleId(vehicleId, vehicleArray) {
   <div class="relative container mx-auto py-4">
 
     <div class="bg-red-500 absolute w-fit md:w-72 lg:w-96 mx-8 top-28 md:top-16 left-0 pl-2 shadow-lg">
-      <h1 class="mx-2 text-2xl font-medium text-slate-50 drop-shadow-2xl ">{{ arrayVoitures[vehiculeId].nom }}</h1>
+      <h1 class="mx-2 text-2xl font-medium text-slate-50 drop-shadow-2xl ">{{ vehicule?.nom }}</h1>
     </div>
 
     <div class="bg-slate-100 m-4 shadow-md border border-slate-300 place-content-center items-center justify-items-center origin-center object-center content-center place-self-center">
@@ -134,23 +134,23 @@ function checkVehicleId(vehicleId, vehicleArray) {
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-200 text-gray-700">
               <span class="font-medium">Modèle:</span>
-              <span class="font-light">{{ arrayVoitures[vehiculeId].nom }}</span>
+              <span class="font-light">{{ vehicule?.nom }}</span>
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-300 text-gray-700">
               <span class="font-medium">Constructeur:</span>
-              <span class="font-light">{{ arrayVoitures[vehiculeId].constructeur }}</span>
+              <span class="font-light">{{ vehicule?.constructeur }}</span>
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-200 text-gray-700">
               <span class="font-medium">Prix location journée:</span>
-              <span class="font-light">{{ arrayVoitures[vehiculeId].prix_location_journee }} €</span>
+              <span class="font-light">{{ vehicule?.prix_location_journee }} €</span>
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-300 text-gray-700">
               <span class="font-medium">Prix réservation:</span>
-              <span class="font-light">{{ arrayVoitures[vehiculeId].prix_reservation_journaliere }} €</span>
+              <span class="font-light">{{ vehicule?.prix_reservation_journaliere }} €</span>
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-200 border-b border-b-slate-300 text-gray-700">
               <span class="font-medium">Kilométrage maximum / jour:</span>
-              <span class="font-light">{{ arrayVoitures[vehiculeId].kilometrage_max_journalier }} €</span>
+              <span class="font-light">{{ vehicule?.kilometrage_max_journalier }} €</span>
             </div>
           </div>
           <div class="rounded-sm bg-red-600 hover:bg-red-700 transition-colors duration-300 my-1 flex flex-col ">
@@ -160,7 +160,7 @@ function checkVehicleId(vehicleId, vehicleArray) {
       </div>
       <div class="flex flex-col justify-center items-start mx-4 mb-4 p-4 bg-slate-200">
         <span class="border-b border-b-slate-300 w-full pb-1 mb-4 font-medium">Description:</span>
-        <p class="font-light ">{{ arrayVoitures[vehiculeId].description }}</p>
+        <p class="font-light ">{{ vehicule?.description }}</p>
         <div>
           <div>
             <span></span>
