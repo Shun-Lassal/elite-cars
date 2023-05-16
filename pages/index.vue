@@ -59,7 +59,8 @@ carouselMove();
           class="object-cover w-full h-80 lg:h-160 md:h-128"
         />
         <cardInfoLanding
-          car-name="Clio RS4"
+          :car-id="1"
+          car-name="Clio 5 RS Line"
           :km-per-day="150"
           :price-per-day="180"
         />
@@ -71,7 +72,8 @@ carouselMove();
           class="object-cover w-full h-80 lg:h-160 md:h-128"
         />
         <cardInfoLanding
-          car-name="Golf GTI 2021"
+          :car-id="2"
+          car-name="Golf Polo GTI"
           :km-per-day="150"
           :price-per-day="180"
         />
@@ -83,7 +85,8 @@ carouselMove();
           class="object-cover w-full h-80 lg:h-160 md:h-128"
         />
         <cardInfoLanding
-          car-name="Fiat 500 Abarth"
+          :car-id="3"
+          car-name="Abarth 595 Pista"
           :km-per-day="180"
           :price-per-day="200"
         />
@@ -91,7 +94,7 @@ carouselMove();
 
       <!-- SELECT CAROUSEL ITEMS -->
       <div
-        class="absolute top-0 left-0 right-0 bottom-0 flex flex-row justify-center items-end z-20 space-x-4 mb-1 md:mb-5"
+        class="absolute left-0 right-0 bottom-0 flex flex-row justify-center items-end z-20 space-x-4 mb-1 md:mb-5 h-15"
       >
         <!-- Button 1-->
         <Icon

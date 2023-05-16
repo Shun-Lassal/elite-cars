@@ -101,22 +101,25 @@ function checkVehicleId(vehicleId, vehicleArray) {
   <NavBar />
   <div class="relative container mx-auto py-4">
 
-    <div class="bg-red-500 absolute w-fit md:w-72 lg:w-96 mx-8 top-28 md:top-16 left-0 pl-2 shadow-lg">
+    <div class="bg-red-500 absolute w-fit md:w-72 lg:w-96 mx-8 top-28 left-0 pl-2 shadow-lg">
       <h1 class="mx-2 text-2xl font-medium text-slate-50 drop-shadow-2xl ">{{ vehicule?.nom }}</h1>
     </div>
 
     <div class="bg-slate-100 m-4 shadow-md border border-slate-300 place-content-center items-center justify-items-center origin-center object-center content-center place-self-center">
-      <div class="md:hidden flex flex-row w-fit items-center bg-slate-500 p-1 rounded group ml-4 mt-4">
-        <Icon name="cil:arrow-left" size="" class="mr-2 text-slate-50 group-hover:text-slate-800" />
-        <span class="text-slate-50 font-light group-hover:text-slate-800 w-fit">
-          Retour à la liste des véhicules</span>
+      <div class="flex flex-row w-fit items-center bg-slate-500 p-1 rounded group ml-4 mt-4">
+        <NuxtLink to="/voitures">
+
+          <Icon name="cil:arrow-left" size="" class="mr-2 text-slate-50 group-hover:text-slate-800" />
+          <span class="text-slate-50 font-light group-hover:text-slate-800 w-fit">
+            Retour à la liste des véhicules</span>
+        </NuxtLink>
       </div>
-      <div class="flex flex-col md:flex-row justify-between items-start bg-slate-200 m-4">
+      <div class="flex flex-col lg:flex-row  justify-between items-start m-4">
         
-        <div class="mr-0 md:mr-4 mb-1 flex flex-col p-1 bg-slate-200">
+        <div class="mr-0 md:mr-2 flex flex-col p-1 bg-slate-200 border border-slate-300 md:w-full">
           <img class="w-fit border border-slate-200" :src="useAssets('pic' + vehiculeId + '.jpg')" alt="">
         </div>
-        <div class="w-full h-full flex-initial flex flex-col justify-evenly items-center md:mr-1 border border-slate-300 mt-1">
+        <div class="w-full lg:w-3/4 h-full flex-initial flex flex-col justify-evenly items-center border border-slate-300">
           <div class="bg-slate-200 grid grid-cols-3 <lg:grid-rows-3 gap-0 relative justify-items-center w-full">
             <div class="h-16 w-16 sm:h-20 sm:w-20 md:h-32 md:w-32 flex flex-col justify-center items-center">
               <img class="object-contain bg-slate-100 p-0.5 border border-slate-300 shadow-md" :src="useAssets('pic1.jpg')" alt="">
@@ -131,6 +134,10 @@ function checkVehicleId(vehicleId, vehicleArray) {
           <div class="bg-slate-200 w-full border-t border-t-slate-300 ">
             <div class="w-full flex">
               <span class=" text-green-700 font-bold text-center border-b border-b-slate-300 w-full">Disponible</span>
+            </div>
+            <div class="w-full px-2 py-1">
+              <span class="border-b border-b-slate-300 mb-2 font-medium">Description:</span>
+              <p class="font-light text-sm text-justify">{{ vehicule?.description }}</p>
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-200 text-gray-700">
               <span class="font-medium">Modèle:</span>
@@ -150,22 +157,36 @@ function checkVehicleId(vehicleId, vehicleArray) {
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-200 border-b border-b-slate-300 text-gray-700">
               <span class="font-medium">Kilométrage maximum / jour:</span>
-              <span class="font-light">{{ vehicule?.kilometrage_max_journalier }} €</span>
+              <span class="font-light">{{ vehicule?.kilometrage_max_journalier }} km</span>
             </div>
           </div>
-          <div class="rounded-sm bg-red-600 hover:bg-red-700 transition-colors duration-300 my-1 flex flex-col ">
-            <button class="text-slate-50 rounded-sm py-1 px-4 text-center">Réserver maintenant</button>
+          <div class="rounded-sm bg-red-600 hover:bg-red-700 transition-colors duration-300 py-2 flex flex-col w-full h-full">
+            <button class="text-slate-50 rounded-sm w-full text-center">Réserver maintenant</button>
           </div>
         </div>
       </div>
-      <div class="flex flex-col justify-center items-start mx-4 mb-4 p-4 bg-slate-200">
-        <span class="border-b border-b-slate-300 w-full pb-1 mb-4 font-medium">Description:</span>
-        <p class="font-light ">{{ vehicule?.description }}</p>
-        <div>
-          <div>
-            <span></span>
-            <span></span>
-          </div>
+      <div class="flex flex-col justify-center items-start mx-4 mb-4 p-2 bg-slate-200">
+        
+        <span class="border-b border-b-slate-300 pb-1 font-medium w-full">Informations techniques:</span>
+        <div class="w-full py-1 px-2 flex flex-row justify-between items-center bg-slate-200 text-gray-700">
+          <span class="font-medium">Nombre de places:</span>
+          <span class="font-light">{{ vehicule?.informations_techniques.nombre_places }}</span>
+        </div>
+        <div class="w-full py-1 px-2 flex flex-row justify-between items-center bg-slate-300 text-gray-700">
+          <span class="font-medium">Boite à vitesse:</span>
+          <span class="font-light">{{ vehicule?.informations_techniques.boite_vitesse }}</span>
+        </div>
+        <div class="w-full py-1 px-2 flex flex-row justify-between items-center bg-slate-200 text-gray-700">
+          <span class="font-medium">Moteur:</span>
+          <span class="font-light">{{ vehicule?.informations_techniques.moteur }}</span>
+        </div>
+        <div class="w-full py-1 px-2 flex flex-row justify-between items-center bg-slate-300 text-gray-700">
+          <span class="font-medium">Puissance moteur:</span>
+          <span class="font-light">{{ vehicule?.informations_techniques.puissance_moteur }}</span>
+        </div>
+        <div class="w-full py-1 px-2 flex flex-row justify-between items-center bg-slate-200 border-b border-b-slate-300 text-gray-700">
+          <span class="font-medium">Consommation:</span>
+          <span class="font-light">{{ vehicule?.informations_techniques.consommation }}</span>
         </div>
       </div>
     </div>
