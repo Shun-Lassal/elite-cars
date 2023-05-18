@@ -147,30 +147,30 @@ carouselMove();
         <div
           class="h-full flex flex-col justify-center items-center border-b border-b-red-500 pb-14"
         >
-          <h2 class="text-3xl font-medium border-b border-b-red-500 mt-14 mb-8">
+          <h2 class="text-3xl text-slate-800 font-medium border-b border-b-red-500 mt-14 mb-8">
             Services de location
           </h2>
   
           <p
-            class="px-4 md:px-16 mb-8 text-center text-xl font-semibold drop-shadow-md"
+            class="px-4 text-slate-800 md:px-16 mb-8 text-center text-xl font-semibold drop-shadow-md"
           >
             Explorez Marseille et ses environs à bord de nos voitures de location
             de qualité supérieure.
           </p>
           <div class="h-full px-4 md:px-16 text-ellipsis space-y-6 font-light">
-            <p class="">
+            <p class="text-slate-600">
               Chez <span class="text-red-500 font-bold">ELITE-CARS</span>, nous
               sommes fiers de proposer une expérience de location de voitures haut
               de gamme à Marseille et dans ses environs, nous disposons d'une
               large sélection de voitures de qualité supérieure pour répondre à
               tous vos besoins de déplacement.
             </p>
-            <p class="">
+            <p class="text-slate-600">
               Que vous soyez en visite à Marseille pour affaires ou pour le
               plaisir, notre équipe expérimentée est là pour vous aider à trouver
               la voiture de location parfaite pour votre voyage.
             </p>
-            <p class="pb-6">
+            <p class="pb-6 text-slate-600">
               Contactez-nous dès maintenant pour réserver votre voiture de
               location et découvrir la beauté de la Côte d'Azur à votre rythme.
             </p>
@@ -192,28 +192,28 @@ carouselMove();
             car-name="Clio 5 RS Line"
             car-brand="renault"
             car-image="pic1.jpg"
-            :price-per-day="170"
+            :price-per-day="70"
           />
           <carCard
             :car-id="2"
             car-name="Golf Polo GTI"
             car-brand="volkswagen"
             car-image="pic2.jpg"
-            :price-per-day="170"
+            :price-per-day="85"
           />
           <carCard
             :car-id="3"
             car-name="Abarth 595 Pista"
             car-brand="fiat"
             car-image="pic3.jpg"
-            :price-per-day="170"
+            :price-per-day="90"
           />
           <carCard
             :car-id="4"
             car-name="Class A200 AMG"
             car-brand="mercedes"
             car-image="pic4.jpg"
-            :price-per-day="170"
+            :price-per-day="110"
           />
         </div>
       </div>

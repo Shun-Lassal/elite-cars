@@ -1,7 +1,7 @@
 <template>
   <NavBar />
   <div class="flex md:flex-row flex-col-reverse justify-center items-center w-full ">
-    <div class="border-t-2 border-t-red-500 md:border-t-0 md:border-r-red-500 md:border-r-2 flex-1 my-16 md:my-16 flex flex-col items-center md:pr-8 mx-8">
+    <div class="border-t-2 border-t-red-500 md:border-t-0 md:border-r-red-500 md:border-r-2 flex-1 my-16 md:my-16 flex flex-col items-center mx-8">
       <h2 class="text-center font-bold text-2xl my-6 text-gray-700">Nous contacter</h2>
       <form class="w-full md:w-1/2 p-4 border border-solid border-slate-300 rounded-lg bg-slate-100 shadow-md space-y-2" autocomplete="on">
         <div class="flex flex-col">
@@ -51,18 +51,18 @@
       <div class="flex flex-col md:flex-row justify-evenly items-center space-y-3 md:space-x-4">
         <div class="flex flex-col justify-center items-center p-1 bg-slate-100 rounded-lg border border-slate-300 shadow">
           <Icon name="fa6-brands:square-snapchat" size="2em" class="text-3xl text-yellow-300 bg-slate-100 border border-slate-300 shadow-sm rounded-lg stroke-black"/>
-          <span class="font-light text-slate-700 bg-slate-200 rounded-lg  px-1 border border-slate-300 m-1">EliteCars13</span>
+          <span class=" text-slate-700 bg-slate-200 rounded-lg  px-1 border border-slate-300 m-1">EliteCars13</span>
         </div>
         <div class="flex flex-col justify-center items-center p-1 bg-slate-100 rounded-lg border border-slate-300 shadow">
           <Icon name="uil:instagram-alt" size="2em" class="border border-slate-300 shadow-sm text-3xl bg-gradient-to-tr from-purple-400 via-red-400 to-yellow-100 rounded-lg text-white "/>
-          <span class="font-light text-slate-700 bg-slate-200 rounded-lg  px-1 border border-slate-300 m-1">EliteCarsMarseille</span>
+          <span class=" text-slate-700 bg-slate-200 rounded-lg  px-1 border border-slate-300 m-1">EliteCarsMarseille</span>
         </div>
         <div class="flex flex-col justify-center items-center p-1 bg-slate-100 rounded-lg border border-slate-300 shadow">
           <Icon name="mdi:phone-in-talk" size="2em" class="border border-slate-300 shadow-sm text-3xl bg-gradient-to-tr text-white from-green-600 via-green-400 to-green-500 rounded-lg"/>
-          <span class="font-light text-slate-700 bg-slate-200 rounded-lg  px-1 border border-slate-300 m-1">+33 6 00 00 00 00</span>
+          <span class=" text-slate-700 bg-slate-200 rounded-lg  px-1 border border-slate-300 m-1">+33 6 00 00 00 00</span>
         </div>
       </div>
-      <span class="text-center my-2 text-slate-700">Nous prennons vos réservations sur les réseaux sociaux!</span>
+      <span class="text-center my-2 text-slate-700 font-light">Nous prennons vos réservations sur les réseaux sociaux!</span>
     </div>
   </div>
   <FootView />

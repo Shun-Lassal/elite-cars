@@ -20,32 +20,31 @@ defineProps({
         <Icon
           name="ic:sharp-bookmark"
           size="4em"
-          class=" absolute top-0 -left-7 lg:-left-2 right-0 bottom-0 text-red-500"
+          class=" absolute top-0 -left-7 right-0 bottom-0 text-red-500"
         />
         <Icon
           :name="`simple-icons:` + carBrand"
           size="2.2em"
-          class=" absolute  top-2.5 right-0 -left-3.5 lg:left-1.5 bottom-0 text-white"
+          class=" absolute  top-2.5 right-0 -left-3.5  bottom-0 text-white"
         />
       </div>
     </div>
-    <div class="flex flex-col justify-evenly items-center h-full w-full">
-      <span class="text-xl font-light py-2">{{ carName }}</span>
+    <div class="flex flex-col justify-evenly items-center h-full w-full bg-slate-50">
+      <span class="text-lg font-normal py-2 text-slate-700 bg-slate-100 lg:text-xl w-full border-b text-center mb-4">{{ carName }}</span>
       <img
         :src="useAssets(carImage)"
         alt=""
-        class="h-3/4 w-3/4 rounded-lg object-cover"
+        class="h-3/4 w-3/4 rounded-lg object-cover border shadow-inner"
       />
-      <span class="mt-2 text-green-700 font-bold" v-if="available"
-        >Disponible aujourd'hui</span
-      >
-      <span class="mt-2 text-red-700 font-bold" v-if="!available"
-        >Indisponible</span
-      >
+      
+      <div class="flex flex-col justify-center items-center mt-2">
+        <span class="font-light text-sm">Prix de la location:</span>
+        <span class="text-red-500 font-extrabold text-lg">€{{ pricePerDay }} / Jour</span>
+      </div>
+
       <NuxtLink :to="`/vehicule/`+carId">
         <div class="bg-red-600 hover:bg-red-700 rounded p-2 text-white mb-4 mt-2">
-          <span class="pr-2 font-light">{{ pricePerDay }}€ / Jour</span>
-          <span class="pl-2 border-l border-l-gray-800 font-bold">Réserver</span>
+          <span class="font-bold">Réserver</span>
         </div>
       </NuxtLink>
     </div>
