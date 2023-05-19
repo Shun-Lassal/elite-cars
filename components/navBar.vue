@@ -26,11 +26,11 @@ const mobileHamburger = ref(false);
         <div
           class="hidden sm:space-x-8 md:visible md:space-x-8 md:flex flex-row justify-center items-center text-gray-900"
         >
-          <NuxtLink to="/voitures" class="pl-0 md:ml-4 flex items-center font-light border-b hover:border-b-slate-700 text-slate-700">
+          <NuxtLink to="/voitures" class="pl-0 md:ml-4 flex items-center font-normal border-b hover:border-b-slate-700 text-slate-700">
             <Icon name="tabler:car" size="1.5em" />
             <span class="pl-4 text-lg font-second ">Voitures</span>
           </NuxtLink>
-          <NuxtLink to="/bateaux" class="flex items-center font-light border-b hover:border-b-slate-700 text-slate-700">
+          <NuxtLink to="/bateaux" class="flex items-center border-b hover:border-b-slate-700 text-slate-700">
             <Icon name="tabler:speedboat" size="1.5em" />
             <span class="pl-4 text-lg font-second">Bateaux</span>
           </NuxtLink>
