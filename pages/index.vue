@@ -147,17 +147,17 @@ carouselMove();
         <div
           class="h-full flex flex-col justify-center items-center border-b border-b-red-500 pb-14"
         >
-          <h2 class="text-3xl text-slate-800 font-medium border-b border-b-red-500 mt-14 mb-8">
+          <h2 class="text-2xl font-medium border-b border-b-red-500 mt-14 mb-8 font-prim text-slate-700">
             Services de location
           </h2>
   
           <p
-            class="px-4 text-slate-800 md:px-16 mb-8 text-center text-xl font-semibold drop-shadow-md"
+            class="px-4 text-slate-700 md:px-16 mb-8 text-center text-xl font-semibold drop-shadow-md font-second"
           >
             Explorez Marseille et ses environs à bord de nos voitures de location
             de qualité supérieure.
           </p>
-          <div class="h-full px-4 md:px-16 text-ellipsis space-y-6 font-light">
+          <div class="h-full px-4 md:px-16 text-ellipsis space-y-6 font-light font-second">
             <p class="text-slate-600">
               Chez <span class="text-red-500 font-bold">ELITE-CARS</span>, nous
               sommes fiers de proposer une expérience de location de voitures haut
@@ -179,7 +179,7 @@ carouselMove();
       </div>
       <div class="border-t bg-slate-200">
         <div class="h-40 flex flex-col justify-center items-center container mx-auto">
-          <h2 class="text-2xl font-medium border-b border-b-red-500">
+          <h2 class="text-2xl font-medium border-b border-b-red-500 font-prim text-slate-700" >
             Véhicules disponibles
           </h2>
         </div>

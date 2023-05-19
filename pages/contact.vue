@@ -2,7 +2,7 @@
   <NavBar />
   <div class="flex md:flex-row flex-col-reverse justify-center items-center w-full ">
     <div class="border-t-2 border-t-red-500 md:border-t-0 md:border-r-red-500 md:border-r-2 flex-1 my-16 md:my-16 flex flex-col items-center mx-8">
-      <h2 class="text-center font-bold text-2xl my-6 text-gray-700">Nous contacter</h2>
+      <h2 class="text-center font-bold text-2xl my-6 text-gray-700 font-prim">Nous contacter</h2>
       <form class="w-full md:w-1/2 p-4 border border-solid border-slate-300 rounded-lg bg-slate-100 shadow-md space-y-2" autocomplete="on">
         <div class="flex flex-col">
           <label class="font-medium text-gray-600" for="nom">Nom :</label>
@@ -20,17 +20,17 @@
           <label class="font-medium text-gray-600" for="message">Message :</label>
           <textarea class="bg-slate-200 p-1 rounded-sm outline-red-600 font-light border border-slate-300" id="message" name="message" rows="4" required></textarea>
         </div>
-        <div class="mt-6 mb-4 mx-auto py-1 place-self-center rounded-sm bg-red-600 hover:bg-red-700 transition-colors duration-300 w-1/2">
-          <button class="text-slate-50 rounded-sm py-1 px-4 text-center w-full">
+        <div class="mt-6 mb-4 mx-auto py-1 place-self-center rounded-sm bg-red-600 hover:bg-red-700 transition-colors duration-300 w-fit">
+          <button class="text-slate-50 rounded-sm py-1 px-4 text-center w-fit">
             Envoyer
           </button>
         </div>
       </form>
     </div>
     <div class="flex-1 w-full flex flex-col">
-      <h2 class="text-center font-bold text-2xl my-6 text-gray-700">Nos réseaux sociaux</h2>
+      <h2 class="text-center font-bold text-2xl my-6 text-gray-700 font-prim">Nos réseaux sociaux</h2>
       <p class="font-light text-center md:text-left px-4 text-slate-700">Suivez-nous sur nos réseaux sociaux pour découvrir les dernières offres, promotions et actualités de notre entreprise de location de véhicules et profitez pleinement de votre expérience avec nous.</p>
-      <div class="flex flex-row justify-center items-center space-x-1 relative h-56 w-full my-8 group">
+      <div class="hidden sm:flex flex-row justify-center items-center space-x-1 relative h-56 w-full my-8 group">
         <div class="w-32 h-52 absolute -translate-x-12 -rotate-6 group-hover:-rotate-0 group-hover:-translate-x-48 duration-500 transition-all">
           <img :src="useAssets('pic5.jpg')" class="absolute w-full h-full " alt="">
           <div class="absolute w-full h-full bg-gradient-to-t from-slate-200 to-slate-200 via-transparent"></div>
@@ -48,7 +48,7 @@
           <div class="absolute w-full h-full bg-gradient-to-t from-slate-200 to-slate-200 via-transparent"></div>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row justify-evenly items-center space-y-3 md:space-x-4">
+      <div class="flex flex-col md:flex-row justify-evenly items-center space-y-3 md:space-y-0 space-x-0 md:space-x-1 lg:space-x-4 mt-4 p-1 sm:mt-0">
         <div class="flex flex-col justify-center items-center p-1 bg-slate-100 rounded-lg border border-slate-300 shadow">
           <Icon name="fa6-brands:square-snapchat" size="2em" class="text-3xl text-yellow-300 bg-slate-100 border border-slate-300 shadow-sm rounded-lg stroke-black"/>
           <span class=" text-slate-700 bg-slate-200 rounded-lg  px-1 border border-slate-300 m-1">EliteCars13</span>

@@ -4,7 +4,7 @@
     <img src="../assets/pic4.jpg" class="h-full object-cover w-full " alt="">
     <div class="absolute bg-gradient-to-t from-black to-transparent via-transparent z-20"></div>
     <div class="absolute top-0 right-0 left-0 md:left-10 bottom-2 md:bottom-5 flex flex-col justify-end items-center md:items-start">
-      <h2 class="border-b border-b-red-500 w-fit text-2xl text-white font-bold drop-shadow-md">Nos voitures de location</h2>
+      <h2 class="border-b border-b-red-500 w-fit text-2xl text-white font-bold drop-shadow-md font-prim">Nos voitures de location</h2>
     </div>
     
   </div>

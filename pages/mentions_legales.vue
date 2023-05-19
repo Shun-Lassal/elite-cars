@@ -1,9 +1,9 @@
 <template>
   <NavBar/>
   <div class="space-y-8 bg-slate-200">
-    <h1 class="text-2xl font-medium border-b border-b-red-500 w-fit md:mx-auto mx-4 text-center pt-16">Mentions Légales, conditions générales de location, etc.</h1>
+    <h1 class="text-2xl font-medium border-b border-b-red-500 w-fit md:mx-auto mx-4 text-center pt-16 font-prim">Mentions Légales, conditions générales de location, etc.</h1>
     <div class="space-y-2 mx-16">
-      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit">Mentions Légales</h2>
+      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit font-prim">Mentions Légales</h2>
       <div class="flex flex-col w-fit font-light space-y-1">
         <span class="font-light">Status: <span class="font-medium">Entreprise</span></span>
         <span class="font-light">Nom de l'entreprise: <span class="font-medium">Elite-Cars</span></span>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="space-y-2 bg-slate-100 px-16 py-8">
-      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit">Conditions générales de location</h2>
+      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit font-prim">Conditions générales de location</h2>
       <div class="flex flex-col w-fit font-light space-y-1">
         <span>Les prix de location sont indiqués sous les véhicules présentés</span>
         <span>Toute location de véhicule nécessite une caution de 1500€ en cas de dédommagement du véhicule</span>
@@ -36,7 +36,7 @@
     </div>
 
     <div class="space-y-2 mx-16">
-      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit">Restrictions de location</h2>
+      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit font-prim">Restrictions de location</h2>
       <div class="flex flex-col w-fit font-light space-y-1">
         <span>Nous avons le droit de vous interdire la location de nos véhicules</span>
         <span>Nous acceptons pas les baileurs dont l'âge est inférieur à 20 ans et moins d'un an et demi d'ancienneté d'un permis de conduire valide</span>
@@ -46,7 +46,7 @@
     </div>
 
     <div class="space-y-2 bg-slate-100 px-16 py-8">
-      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit">Politique de confidentialité</h2>
+      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit font-prim">Politique de confidentialité</h2>
       <div class="flex flex-col w-fit font-light space-y-1">
         <span>Nous collectons seulement les informations que vous avez fournis lors d'une réservation</span>
         <span>La collection des données passent par le remplissage des formulaires de réservation</span>
@@ -59,7 +59,7 @@
     </div>
 
     <div class="space-y-2 mx-16 pb-16">
-      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit">Cookies</h2>
+      <h2 class="text-xl font-medium border-b border-b-red-500 w-fit font-prim">Cookies</h2>
       <div class="flex flex-col w-fit font-light space-y-1">
         <span>Nous ne partageons aucuns de nos cookies à des tiers</span>
         <span>Vous acceptez nos cookies à partir du moment où vous consultez le site</span>

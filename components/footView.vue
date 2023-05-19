@@ -19,7 +19,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col justify-center items-start space-y-4 text-ellipsis mb-8 md:mb-0 md:py-8"
+        class="flex flex-col justify-center items-start space-y-4 text-ellipsis mb-8 md:mb-0 md:py-8 font-prim"
       >
         <NuxtLink to="mentions_legales">
           <span class="text-slate-400 hover:text-slate-500">Mentions légales</span>

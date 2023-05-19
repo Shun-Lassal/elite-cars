@@ -30,7 +30,7 @@ defineProps({
       </div>
     </div>
     <div class="flex flex-col justify-evenly items-center h-full w-full bg-slate-50">
-      <span class="text-lg font-normal py-2 text-slate-700 bg-slate-100 lg:text-xl w-full border-b text-center mb-4">{{ carName }}</span>
+      <span class="text-lg font-normal py-2 text-slate-700 bg-slate-100 lg:text-base w-full border-b text-center mb-4 font-prim">{{ carName }}</span>
       <img
         :src="useAssets(carImage)"
         alt=""
@@ -38,13 +38,14 @@ defineProps({
       />
       
       <div class="flex flex-col justify-center items-center mt-2">
-        <span class="font-light text-sm">Prix de la location:</span>
+        <span class=" text-sm">Prix de la location:</span>
         <span class="text-red-500 font-extrabold text-lg">€{{ pricePerDay }} / Jour</span>
       </div>
 
       <NuxtLink :to="`/vehicule/`+carId">
-        <div class="bg-red-600 hover:bg-red-700 rounded p-2 text-white mb-4 mt-2">
-          <span class="font-bold">Réserver</span>
+        <div class="group  p-2 text-white mb-4 mt-2">
+          <span class="font-bold pr-2 bg-slate-600 rounded-tl rounded-bl p-2 group-hover:bg-slate-700">Détails</span>
+          <span class="font-bold pl-2 bg-red-600 rounded-tr rounded-br p-2 group-hover:bg-red-700">Réserver</span>
         </div>
       </NuxtLink>
     </div>

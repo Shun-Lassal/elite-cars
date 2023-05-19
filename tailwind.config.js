@@ -7,6 +7,10 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    fontFamily: {
+      prim: ['Bruno Ace SC', 'serif'],
+      second: ['Lato', 'sans-serif'],
+    },
     extend: {
       spacing: {
         128: "32rem",

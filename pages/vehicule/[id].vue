@@ -102,7 +102,7 @@ function checkVehicleId(vehicleId, vehicleArray) {
   <div class="relative container mx-auto py-4">
 
     <div class="bg-red-500 absolute w-fit md:w-72 lg:w-96 mx-8 top-28 left-0 pl-2 shadow-lg">
-      <h1 class="mx-2 text-2xl font-medium text-slate-50 drop-shadow-2xl ">{{ vehicule?.nom }}</h1>
+      <h1 class="mx-2 text-2xl font-medium text-slate-50 drop-shadow-2xl font-prim">{{ vehicule?.nom }}</h1>
     </div>
 
     <div class="bg-slate-100 m-4 shadow-md border border-slate-300 place-content-center items-center justify-items-center origin-center object-center content-center place-self-center">
@@ -131,13 +131,13 @@ function checkVehicleId(vehicleId, vehicleArray) {
               <img class="object-contain bg-slate-100 p-0.5" :src="useAssets('pic4.jpg')" alt=""> 
             </div>
           </div>
-          <div class="bg-slate-200 w-full border-t border-t-slate-300 ">
+          <div class="bg-slate-200 w-full border-t border-t-slate-300">
             <div class="w-full flex">
               <span class=" text-green-700 font-bold text-center border-b border-b-slate-300 w-full">Disponible</span>
             </div>
-            <div class="w-full px-2 py-1">
-              <span class="border-b border-b-slate-300 mb-2 font-medium">Description:</span>
-              <p class="font-light text-sm text-justify">{{ vehicule?.description }}</p>
+            <div class="w-full px-2 py-1 bg-slate-300">
+              <span class="border-b border-b-slate-400 mb-2 font-medium">Description:</span>
+              <p class="font-light text-sm text-justify pt-1">{{ vehicule?.description }}</p>
             </div>
             <div class="py-1 px-2 flex flex-row justify-between items-center bg-slate-200 text-gray-700">
               <span class="font-medium">Modèle:</span>

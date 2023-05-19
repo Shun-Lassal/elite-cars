@@ -11,6 +11,14 @@ export default defineNuxtConfig({
     "@nuxtjs/eslint-module",
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
+    ['@nuxtjs/google-fonts', {
+      families: {
+        'Bruno Ace SC': true,
+        Lato: [100,200,300,400,500,600,700,800],
+        download: true,
+        inject: true
+      }
+    }]
   ],
   tailwindcss: {
     cssPath: "~/assets/css/colors.css",
@@ -19,5 +27,4 @@ export default defineNuxtConfig({
     injectPosition: 0,
   },
   plugins: [],
-
 });
