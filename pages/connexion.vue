@@ -6,7 +6,7 @@
       </div>
       <form action="" class="lg:w-1/3 flex-initial border border-solid border-slate-300 rounded-lg bg-slate-100 shadow-md">
         <div class="p-4 flex flex-col justify-center items-center">
-          <span class="text-center font-bold text-2xl my-6 text-gray-700">Connexion</span>
+          <span class="text-center font-bold text-2xl my-6 text-gray-700 font-prim">Connexion</span>
           <div class="flex flex-col mb-4">
             <label for="login" class="font-medium text-gray-600">Identifiant</label>
             <input type="text" class="bg-slate-200 p-1 rounded-sm outline-red-600 font-light border border-slate-300">
