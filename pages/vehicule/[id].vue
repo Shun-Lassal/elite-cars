@@ -2,6 +2,7 @@
 <script setup>
 const route = useRoute()
 let vehiculeId = parseInt(route.params.id)
+let photoSelected = ref(0);
 
 const arrayVoitures = [
   {
